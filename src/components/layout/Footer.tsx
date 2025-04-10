@@ -16,7 +16,7 @@ export default function Footer() {
           
           <div className="flex space-x-6">
             <Link 
-              href="https://github.com/" 
+              href="https://github.com/shivangipatel2508" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors"
@@ -34,14 +34,14 @@ export default function Footer() {
               <FiLinkedin className="w-5 h-5" />
             </Link>
             <Link 
-              href="mailto:contact@shivangi.works" 
+              href="mailto:shivangipatel2508@gmail.com" 
               className="text-gray-600 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors"
               aria-label="Email"
             >
               <FiMail className="w-5 h-5" />
             </Link>
             <Link 
-              href="https://discord.com/" 
+              href="https://discord.com/users/903870869967867934" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors"
