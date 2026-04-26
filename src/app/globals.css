@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Use class-based dark mode so toggling the html.dark class works. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Custom animations */
 @keyframes fadeIn {
   from { opacity: 0; }
