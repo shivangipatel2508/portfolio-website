@@ -4,12 +4,12 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SiC, SiCplusplus, SiPython, SiJavascript, SiTypescript, SiDart, SiR,
   SiNodedotjs, SiDjango, SiFlutter, SiReact, SiNextdotjs, SiTailwindcss, SiFramer,
-  SiMysql, SiSqlite, SiOracle, SiAmazonaws, SiLinux, SiApache, 
+  SiMysql, SiSqlite, SiLinux, SiApache,
   SiGit, SiDocker, SiJira, SiNpm, SiApachejmeter, SiArduino, SiRaspberrypi, 
   SiEspressif, SiJoomla, SiTensorflow, SiPytorch, SiJupyter, SiOpenai } from 'react-icons/si';
-import { DiJava, DiPhp, DiMysql } from 'react-icons/di';
+import { DiJava, DiPhp, DiMysql, DiDatabase } from 'react-icons/di';
 import { FiLayers, FiCode, FiDatabase, FiServer, FiCpu, FiHardDrive, FiChevronRight, FiSearch, FiX } from 'react-icons/fi';
-import { FaBrain } from 'react-icons/fa';
+import { FaBrain, FaAws } from 'react-icons/fa';
 
 // Define skill categories
 const CATEGORIES = [
@@ -65,7 +65,7 @@ const CATEGORIES = [
 
 // Get icon component for a skill
 function getSkillIcon(name: string) {
-  const iconMap: Record<string, JSX.Element> = {
+  const iconMap: Record<string, React.ReactElement> = {
     'C': <SiC className="w-6 h-6" />,
     'C++': <SiCplusplus className="w-6 h-6" />,
     'Python': <SiPython className="w-6 h-6" />,
@@ -82,10 +82,10 @@ function getSkillIcon(name: string) {
     'Next.js': <SiNextdotjs className="w-6 h-6" />,
     'Tailwind CSS': <SiTailwindcss className="w-6 h-6" />,
     'Framer Motion': <SiFramer className="w-6 h-6" />,
-    'PL/SQL': <SiOracle className="w-6 h-6" />,
+    'PL/SQL': <DiDatabase className="w-6 h-6" />,
     'SQLite': <SiSqlite className="w-6 h-6" />,
     'MySQL': <DiMysql className="w-6 h-6" />,
-    'Cloud Computing': <SiAmazonaws className="w-6 h-6" />,
+    'Cloud Computing': <FaAws className="w-6 h-6" />,
     'Linux Shell': <SiLinux className="w-6 h-6" />,
     'Advanced Networking': <SiApache className="w-6 h-6" />,
     'ESP WiFi': <SiEspressif className="w-6 h-6" />,
@@ -281,7 +281,7 @@ export default function SkillsPage() {
     databases: [
       { 
         name: "PL/SQL", 
-        icon: <SiOracle />, 
+        icon: <DiDatabase />, 
         level: "Advanced", 
         year: "2023", 
         description: "Learned during 5th semester in 2023, used in various projects and applications.",
@@ -305,7 +305,7 @@ export default function SkillsPage() {
       },
       { 
         name: "Cloud Computing", 
-        icon: <SiAmazonaws />, 
+        icon: <FaAws />, 
         level: "Advanced", 
         year: "2024", 
         description: "Learned during 7th semester in 2024, continuously expanding knowledge.",
@@ -1123,7 +1123,10 @@ export default function SkillsPage() {
                               }}
                             >
                               <div className="flex-shrink-0 w-5 h-5 flex items-center justify-center">
-                                {React.cloneElement(getSkillIcon(skill.name), { className: 'w-4 h-4' })}
+                                {React.cloneElement(
+                                  getSkillIcon(skill.name) as React.ReactElement<{ className?: string }>,
+                                  { className: 'w-4 h-4' }
+                                )}
                               </div>
                               <span>{skill.name}</span>
                             </button>

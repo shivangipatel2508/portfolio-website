@@ -82,7 +82,7 @@ export default function Navbar() {
             <div className="absolute -left-1 -top-1 w-8 h-8 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-lg transform rotate-12 group-hover:rotate-45 transition-transform duration-300"></div>
             <div className="absolute -left-2 -top-2 w-8 h-8 border border-indigo-500/30 rounded-lg transform rotate-12 group-hover:rotate-6 transition-transform duration-300 delay-75"></div>
             <span className="text-xl font-bold text-gray-900 dark:text-white ml-3">
-              Shivangi<span className="text-indigo-600 dark:text-indigo-400">.works</span>
+              Shivangi
             </span>
           </Link>
 

@@ -30,11 +30,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Shivangi's Portfolio",
     description: 'Professional portfolio of Shivangi Patel, MSc IT student and developer.',
-    url: 'https://shivangi.works',
+    url: 'https://shivangipatel.me',
     siteName: "Shivangi's Portfolio",
     
     images: [{
-      url: "https://shivangi.works/images/shivangi.JPG",
+      url: "https://shivangipatel.me/images/shivangi.JPG",
       width: 1200,
       height: 630,
       alt: "Shivangi logo/profile picture",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    images: ["https://shivangi.works/images/shivangi.JPG"],
+    images: ["https://shivangipatel.me/images/shivangi.JPG"],
   },
 }
 
