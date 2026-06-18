@@ -264,6 +264,32 @@ export default function Contact() {
                       </p>
                     </div>
                   </motion.div>
+
+                  {/* Resume */}
+                  <motion.div 
+                    className="flex items-start gap-5"
+                    whileHover={{ x: 5 }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                  >
+                    <div className="p-3.5 bg-gradient-to-br from-emerald-500/80 to-teal-600/80 dark:from-emerald-500/30 dark:to-teal-700/30 text-white rounded-2xl shadow-sm">
+                      <FiFileText className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Resume</h3>
+                      <a 
+                        href="https://canva.link/etz1jmej84o4xcv" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-indigo-600 dark:text-indigo-400 hover:underline inline-flex items-center gap-1 group"
+                      >
+                        View my Resume
+                        <span className="transform translate-x-0 group-hover:translate-x-1 transition-transform">→</span>
+                      </a>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                        Download or view my latest CV
+                      </p>
+                    </div>
+                  </motion.div>
                 </div>
               </div>
 

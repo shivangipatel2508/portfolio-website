@@ -80,6 +80,25 @@ const timeline = [
     category: 'achievement',
     highlight: 'Secured 2nd position in both Code Snap and IT Quiz competitions.'
   },
+  {
+    id: 9,
+    year: '2026',
+    title: 'College Placement at 7Span',
+    description: 'Secured college placement and worked on a major project: SiteGPT Clone.',
+    icon: <FiStar className="w-5 h-5" />,
+    category: 'milestone',
+    highlight: 'Achieved college placement to 7Span.',
+    special: true
+  },
+  {
+    id: 10,
+    year: '2026',
+    title: 'CodeSnap Cybershadez Winner',
+    description: 'Participated in the Cybershadez competition of CodeSnap.',
+    icon: <FiAward className="w-5 h-5" />,
+    category: 'achievement',
+    highlight: 'Won 1st prize in the CodeSnap competition.'
+  },
 ];
 
 // Helper function to get appropriate color based on category
@@ -456,141 +475,6 @@ export default function Journey() {
 
       
 
-      {/* Future Goals Section with Tech-Inspired Design */}
-      <section className="py-16 px-4 md:px-6 bg-gradient-to-br from-slate-50 via-gray-50 to-indigo-50 dark:from-slate-950 dark:via-gray-900 dark:to-indigo-950 relative overflow-hidden">
-        {/* Enhanced tech pattern background */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Animated gradient orb */}
-          <div className="absolute -top-20 -right-20 w-64 h-64 bg-gradient-to-br from-indigo-300/20 to-purple-300/10 dark:from-indigo-600/10 dark:to-purple-500/5 rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-gradient-to-tr from-blue-300/10 to-cyan-300/5 dark:from-blue-600/5 dark:to-cyan-500/5 rounded-full blur-3xl"></div>
-          
-          {/* Digital circuit grid */}
-          <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.07]">
-            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="future-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="0.5"/>
-                  <circle cx="0" cy="0" r="1" fill="currentColor" opacity="0.3" />
-                  <circle cx="40" cy="0" r="1" fill="currentColor" opacity="0.3" />
-                  <circle cx="0" cy="40" r="1" fill="currentColor" opacity="0.3" />
-                  <circle cx="40" cy="40" r="1" fill="currentColor" opacity="0.3" />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#future-grid)" />
-            </svg>
-          </div>
-          
-          {/* Floating digital elements */}
-          <div className="absolute top-1/4 left-1/4 w-1 h-16 bg-gradient-to-b from-indigo-400/20 to-transparent dark:from-indigo-400/10 rounded-full"></div>
-          <div className="absolute top-1/3 right-1/3 w-1 h-24 bg-gradient-to-b from-blue-400/20 to-transparent dark:from-blue-400/10 rounded-full"></div>
-          <div className="absolute bottom-1/4 right-1/5 w-1 h-20 bg-gradient-to-b from-purple-400/20 to-transparent dark:from-purple-400/10 rounded-full"></div>
-        </div>
-        
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <motion.div 
-            className="max-w-3xl mx-auto text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Looking Forward
-            </h2>
-            <p className="text-gray-600 dark:text-gray-400">
-              The next chapters in my technological journey
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-            <motion.div 
-              className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border border-gray-100 dark:border-gray-700"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              whileHover={{ y: -5 }}
-            >
-              {/* Decorative top line */}
-              <div className="h-1.5 w-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-              <div className="p-8">
-                <div className="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center mb-6">
-                  <FiCode className="w-7 h-7 text-blue-600 dark:text-blue-400" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">Launch BarkBuddy App</h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  Release the completed Flutter application to help dog owners and dog lovers connect.
-                </p>
-                
-                {/* Tech line decoration */}
-                <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700">
-                  <div className="flex gap-2">
-                    <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs font-medium text-gray-600 dark:text-gray-400">Flutter</span>
-                    <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs font-medium text-gray-600 dark:text-gray-400">API Integration</span>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border border-gray-100 dark:border-gray-700"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              whileHover={{ y: -5 }}
-            >
-              {/* Decorative top line */}
-              <div className="h-1.5 w-full bg-gradient-to-r from-purple-500 to-pink-600"></div>
-              <div className="p-8">
-                <div className="w-14 h-14 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mb-6">
-                  <FiBookOpen className="w-7 h-7 text-purple-600 dark:text-purple-400" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">Complete MSc with Excellence</h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  Graduate with top rankings and contribute meaningful research to the field of Information Technology.
-                </p>
-                
-                {/* Tech line decoration */}
-                <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700">
-                  <div className="flex gap-2">
-                    <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs font-medium text-gray-600 dark:text-gray-400">Research</span>
-                    <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs font-medium text-gray-600 dark:text-gray-400">Academic Excellence</span>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border border-gray-100 dark:border-gray-700"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              whileHover={{ y: -5 }}
-            >
-              {/* Decorative top line */}
-              <div className="h-1.5 w-full bg-gradient-to-r from-green-500 to-teal-600"></div>
-              <div className="p-8">
-                <div className="w-14 h-14 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mb-6">
-                  <FiTrendingUp className="w-7 h-7 text-green-600 dark:text-green-400" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">Professional Growth</h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  Enter the industry as a skilled developer working on challenging projects that make a difference.
-                </p>
-                
-                {/* Tech line decoration */}
-                <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700">
-                  <div className="flex gap-2">
-                    <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs font-medium text-gray-600 dark:text-gray-400">Development</span>
-                    <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs font-medium text-gray-600 dark:text-gray-400">Innovation</span>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
       
       {/* Inspiration Quote with Animated Code Background */}
       <section className="py-20 px-4 md:px-6 relative bg-indigo-600 dark:bg-indigo-800 overflow-hidden">

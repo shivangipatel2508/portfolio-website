@@ -52,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${robotoMono.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`dark ${inter.variable} ${robotoMono.variable}`}>
       <body className="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow pt-16">
